@@ -1,0 +1,35 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "LeetCode",
+			"command": "C:\\Program Files (x86)\\MingW64\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-g",
+				"-Wall",
+				"${file}",
+				"-o",
+				"${fileDirname}/output/bin/${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": false,
+				"panel": "new",
+				"showReuseMessage": true,
+				"clear": false
+			}
+		}
+	]
+}
