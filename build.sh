@@ -12,8 +12,9 @@ mkdir -p $OUTPUT_DIR/bin
 mkdir -p $OUTPUT_DIR/lib
 
 cd $BUILD_DIR/tmp/
-make
-make install
+cmake ../../
+make && make install
+
 
 
 

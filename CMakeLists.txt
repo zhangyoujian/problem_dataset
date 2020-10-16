@@ -16,7 +16,6 @@ aux_source_directory(${SOURCE_DIR} SRC_LIST)
 add_executable(LeetCode ${SRC_MAIN_LIST} ${SRC_LIST})
 
 install(
-    TARGETS LeetCode RUNTIME DESTINATION bin
-    FILES LeetCode DESTINATION bin
+    TARGETS LeetCode RUNTIME DESTINATION ${OUTPUT_DIR}/bin
 )
 
