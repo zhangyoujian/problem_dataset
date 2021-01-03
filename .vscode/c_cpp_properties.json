@@ -6,6 +6,7 @@
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/include/**",
                 "${workspaceFolder}/src/**",
+                "${workspaceFolder}/test/gtest/include/*",
                 "C:/Program Files (x86)/MingW64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits",
                 "C:/Program Files (x86)/MingW64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++",
                 "C:/Program Files (x86)/MingW64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32",
