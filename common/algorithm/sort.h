@@ -11,10 +11,6 @@ Description: heard file
 #include "type.h"
 
 
-#ifdef __cpluscplus
-extern "C" {
-#endif
-
 void SelectSort(int arr[], uint N);
 void BubbleSort(int arr[], uint N);
 void InsertSort(int arr[], uint N);
@@ -23,9 +19,6 @@ void MergeSort(int arr[], uint N);
 void HeapSort(int arr[], uint N);
 void QuickSort(int arr[], uint N);
 
-#ifdef __cplusplus
-}
-#endif
 
 
 #endif

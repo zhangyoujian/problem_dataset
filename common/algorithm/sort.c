@@ -39,11 +39,11 @@ void BubbleSort(int arr[], uint N)
         return;
     }
     for (uint i = 0; i < N - 1; ++i)
-    for (uint j = 0; j < N - 1 -i; ++j) {
+    for (uint j = 0; j < N - 1 - i; ++j) {
         if (arr[j + 1] < arr[j]) {
             int tmp = arr[j];
             arr[j] = arr[j + 1];
-            arr[j] = tmp;
+            arr[j + 1] = tmp;
         }
     }
 }

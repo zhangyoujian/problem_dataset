@@ -6,10 +6,10 @@ set(OUTPUT_LIBRARY ${OUTPUT_DIR}/lib/)
 aux_source_directory(. SRC_LIST)
 
 # 编译生成链接库
-add_library(common SHARED ${SRC_LIST})
+add_library(common STATIC ${SRC_LIST})
 
 install(
     TARGETS common
-    LIBRARY DESTINATION ${OUTPUT_LIBRARY}
+    ARCHIVE DESTINATION ${OUTPUT_LIBRARY}
 )
 
