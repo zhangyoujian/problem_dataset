@@ -8,8 +8,9 @@ set (OUTPUT_DIR ${CMAKE_CURRENT_SOURCE_DIR}/output/)
 set (COMMON_DIR ${CMAKE_CURRENT_SOURCE_DIR}/common/)
 set (PUB_INC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/pub/)
 
-include_directories(${INCLUDE_DIR})
-include_directories(${COMMON_DIR})
 include_directories(${PUB_INC_DIR})
+include_directories(${INCLUDE_DIR})
+add_subdirectory (${COMMON_DIR})
+
 
 

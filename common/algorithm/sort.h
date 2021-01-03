@@ -6,10 +6,10 @@ Version: 1.0
 Date: 2021.1.2
 Description: heard file
 */
-
 #ifndef SORT_H
 #define SORT_H
 #include "type.h"
+
 
 #ifdef __cpluscplus
 extern "C" {
@@ -23,9 +23,9 @@ void MergeSort(int arr[], uint N);
 void HeapSort(int arr[], uint N);
 void QuickSort(int arr[], uint N);
 
-
 #ifdef __cplusplus
 }
 #endif
+
 
 #endif

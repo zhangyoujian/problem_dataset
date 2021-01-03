@@ -10,7 +10,6 @@ Description: heard file
 #define TYPE_H
 #include <stdio.h>
 
-
 #ifdef __cpluscplus
 extern "C" {
 #endif
@@ -21,6 +20,7 @@ typedef long long int int64;
 typedef unsigned int uint;
 typedef unsigned char uint8;
 typedef unsigned long long int uint64;
+
 
 
 #ifdef __cplusplus
