@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -e
 CUR_DIR=$(cd `dirname $0`;pwd)
 BUILD_DIR=$CUR_DIR
 
@@ -9,7 +9,9 @@ cd $BUILD_DIR/tmp/
 
 cmake ../
 make
-make install
+
+set +e
+
 
 
 
