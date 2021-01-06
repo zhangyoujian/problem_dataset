@@ -8,6 +8,7 @@ extern "C" {
     #include "sort.h"
 }
 
+
 const uint g_bigestNum = 100;
 uint N = 0;
 int *dataArray = NULL;

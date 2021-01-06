@@ -14,7 +14,7 @@ Description: heard file
 #include <assert.h>
 
 
-#ifdef __cpluscplus
+#ifdef __cplusplus
 extern "C" {
 #endif
 
@@ -55,7 +55,7 @@ void InsertSort(int arr[], uint N)
     }
     for (uint i = 0; i < N; ++i) {
         int insData = arr[i];
-        uint index = i - 1;
+        int index = i - 1;
         while (index >= 0 && insData < arr[index]) {
             arr[index + 1] = arr[index];
             arr[index--] = insData;
@@ -69,13 +69,14 @@ void ShellSort(int arr[], uint N)
         return;
     }
 
-    for (uint gap = N / gap; gap > 0; gap /= 2) {
+    for (uint gap = N / 2; gap > 0; gap /= 2) {
         for (uint i = 0; i < N; i += gap) {
             int insData = arr[i];
             uint index = i - gap;
             while (index >= 0 && insData < arr[index])  {
                 arr[index + gap] = arr[index];
                 arr[index] = insData;
+                index = index - gap;
             }
         }
     }
@@ -95,8 +96,8 @@ void MergeSort(int arr[], uint N)
     int *rigjhtBuff = (int *)malloc(sizeof(int) * rightLength);
     assert(rigjhtBuff != NULL);
     
-    (void)memcpy(leftBuff, arr, leftLength);
-    (void)memcpy(rigjhtBuff, arr + leftLength, rightLength);
+    (void)memcpy(leftBuff, arr, sizeof(int) * leftLength);
+    (void)memcpy(rigjhtBuff, arr + leftLength, sizeof(int) * rightLength);
     MergeSort(leftBuff, leftLength);
     MergeSort(rigjhtBuff, rightLength);
 
@@ -124,7 +125,7 @@ void MergeSort(int arr[], uint N)
 
 static void HeapUp(int arr[], int i, uint N) 
 {
-    uint cmpData = arr[i];
+    int cmpData = arr[i];
     for (uint k = 2 * i + 1; i < N; k = 2 * k + 1) {
         if (k + 1 < N && arr[k] < arr[k + 1]) {
             k++;
@@ -132,6 +133,8 @@ static void HeapUp(int arr[], int i, uint N)
         if (arr[k] > cmpData) {
             arr[i] = arr[k];
             i = k;
+        } else {
+            break;
         }
     }
     arr[i] = cmpData;
@@ -143,11 +146,11 @@ void HeapSort(int arr[], uint N)
         return;
     }
 
-    for (uint i = N/2 - 1; i >= 0; --i) {
+    for (int i = N / 2 - 1; i >= 0; --i) {
         HeapUp(arr, i, N);
     }
 
-    for (uint i = N - 1; i > 0; --i) {
+    for (int i = N - 1; i > 0; --i) {
         int tmp = arr[i];
         arr[i] = arr[0];
         arr[0] = tmp;
@@ -160,7 +163,7 @@ static void partion( int arr[], uint begin, uint end)
     if (arr == NULL || begin >= end) {
         return;
     }
-    uint refIndex = rand() % (end - begin + 1) + begin;
+    int refIndex = rand() % (end - begin + 1) + begin;
     int refData = arr[refIndex];
     uint index = begin;
     for (uint j = begin; j <= end; ++j) {

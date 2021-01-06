@@ -3,6 +3,9 @@ set -e
 CUR_DIR=$(cd `dirname $0`;pwd)
 BUILD_DIR=$CUR_DIR
 
+rm -rf $BUILD_DIR/tmp
+rm -rf ut_sort
+
 mkdir -p $BUILD_DIR/tmp
 
 cd $BUILD_DIR/tmp/

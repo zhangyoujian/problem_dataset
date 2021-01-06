@@ -10,7 +10,7 @@ aux_source_directory(${COMMON_DIR}/algorithm/ SRC_LIST)
 # 编译生成链接库
 add_library(common SHARED ${SRC_LIST})
 
-targe_link_libraries(common pthread)
+target_link_libraries(common pthread)
 
 install(
     TARGETS common

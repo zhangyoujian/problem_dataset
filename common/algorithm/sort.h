@@ -10,7 +10,7 @@ Description: heard file
 #define SORT_H
 #include "type.h"
 
-#ifdef __cpluscplus
+#ifdef __cplusplus
 extern "C" {
 #endif
 
