@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 CUR_DIR=$(cd `dirname $0`;pwd)
 BUILD_DIR=$CUR_DIR/build/
 OUTPUT_DIR=$CUR_DIR/output/
@@ -16,6 +18,8 @@ mkdir -p $OUTPUT_DIR/lib
 cd $BUILD_DIR/tmp/
 cmake ../../
 make && make install
+
+set +e
 
 
 
