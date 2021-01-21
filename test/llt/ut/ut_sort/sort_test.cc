@@ -3,10 +3,8 @@
 #include <algorithm>
 #include <vector>
 using namespace std;
+#include "sort.h"
 
-extern "C" {
-    #include "sort.h"
-}
 
 
 const uint g_bigestNum = 100;
@@ -105,7 +103,7 @@ TEST_F(test_sort, InsertSort)
     PrintData(cmpResult.data(), N);
 }
 
-TEST_F(test_sort, DISABLED_ShellSort)
+TEST_F(test_sort, ShellSort)
 {
     vector<int> stdResult(dataArray, dataArray + N);
     vector<int> cmpResult(dataArray, dataArray + N);
@@ -121,7 +119,7 @@ TEST_F(test_sort, DISABLED_ShellSort)
     PrintData(cmpResult.data(), N);
 }
 
-TEST_F(test_sort, DISABLED_MergeSort)
+TEST_F(test_sort, MergeSort)
 {
     vector<int> stdResult(dataArray, dataArray + N);
     vector<int> cmpResult(dataArray, dataArray + N);
@@ -137,7 +135,7 @@ TEST_F(test_sort, DISABLED_MergeSort)
     PrintData(cmpResult.data(), N);
 }
 
-TEST_F(test_sort, DISABLED_HeapSort)
+TEST_F(test_sort, HeapSort)
 {
     vector<int> stdResult(dataArray, dataArray + N);
     vector<int> cmpResult(dataArray, dataArray + N);
@@ -153,7 +151,7 @@ TEST_F(test_sort, DISABLED_HeapSort)
     PrintData(cmpResult.data(), N);
 }
 
-TEST_F(test_sort, DISABLED_QuickSort)
+TEST_F(test_sort, QuickSort)
 {
     vector<int> stdResult(dataArray, dataArray + N);
     vector<int> cmpResult(dataArray, dataArray + N);

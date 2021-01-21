@@ -72,7 +72,7 @@ void ShellSort(int arr[], uint N)
     for (uint gap = N / 2; gap > 0; gap /= 2) {
         for (uint i = 0; i < N; i += gap) {
             int insData = arr[i];
-            uint index = i - gap;
+            int index = i - gap;
             while (index >= 0 && insData < arr[index])  {
                 arr[index + gap] = arr[index];
                 arr[index] = insData;
@@ -123,10 +123,10 @@ void MergeSort(int arr[], uint N)
     free(rigjhtBuff);
 }
 
-static void HeapUp(int arr[], int i, uint N) 
+static void HeapUp(int arr[], int i, int N) 
 {
     int cmpData = arr[i];
-    for (uint k = 2 * i + 1; i < N; k = 2 * k + 1) {
+    for (uint k = 2 * i + 1; k < N; k = 2 * k + 1) {
         if (k + 1 < N && arr[k] < arr[k + 1]) {
             k++;
         }
@@ -158,7 +158,7 @@ void HeapSort(int arr[], uint N)
     }
 }
 
-static void partion( int arr[], uint begin, uint end) 
+static uint partion( int arr[], uint begin, uint end) 
 {
     if (arr == NULL || begin >= end) {
         return;
@@ -177,11 +177,15 @@ static void partion( int arr[], uint begin, uint end)
         }
     }
 
-    if (index > begin) {
-        partion(arr, begin, index);
-    }
-    if (end > index) {
-        partion(arr, index, end);
+    return index;
+}
+
+void QuickSortCore(int arr[], uint left, uint right)
+{
+    if (left < right) {
+        uint index = partion(arr, left, right);
+        QuickSortCore(arr, left, index);
+        QuickSortCore(arr, index + 1, right);
     }
 }
 
@@ -190,9 +194,8 @@ void QuickSort(int arr[], uint N)
     if (arr == NULL || N <= 1) {
         return;
     }
-
     srand(time(NULL));
-    partion(arr, 0, N - 1);
+    QuickSortCore(arr, 0, N - 1);
 }
 
 
