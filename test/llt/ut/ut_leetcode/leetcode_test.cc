@@ -24,8 +24,8 @@ private:
 TEST_F(test_leetcode, 04_media_of_two_sorted_arrays)
 {
     Solution A;
-    vector<int> nums1 = {1,3,5};
-    vector<int> nums2 = {2, 4, 6};
+    vector<int> nums1 = {2};
+    vector<int> nums2 = {};
     double ret = A.findMedianSortedArrays(nums1, nums2);
-    cout<<ret<<endl;
+    printf("ret = %.4f\n", ret);
 }
