@@ -1,7 +1,0 @@
-[
-{
-  "directory": "D:/LeetCode/build/common/algorithm",
-  "command": "C:\\PROGRA~2\\MingW64\\mingw64\\bin\\X8EAA8~1.EXE -Dalgorithm_EXPORTS @CMakeFiles/algorithm.dir/includes_C.rsp -g -lm -O0  -g -fPIC -o CMakeFiles\\algorithm.dir\\src\\sort.c.obj -c D:\\LeetCode\\common\\algorithm\\src\\sort.c",
-  "file": "D:/LeetCode/common/algorithm/src/sort.c"
-}
-]
