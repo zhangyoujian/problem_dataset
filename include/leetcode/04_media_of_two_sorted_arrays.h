@@ -1,7 +1,7 @@
 #include <iostream>
 #include<vector>
 using namespace std;
-class Solution {
+class Solution_04 {
 public:
 
     double findKposOfSortedArrays(vector<int> nums1, vector<int> nums2, int k)
