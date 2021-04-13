@@ -3,7 +3,7 @@
 #include<algorithm>
 using namespace std;
 
-class Solution {
+class Solution_31 {
 public:
     void nextPermutation(vector<int>& nums) {
         int N = nums.size();

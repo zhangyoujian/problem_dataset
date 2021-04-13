@@ -3,7 +3,7 @@
 #include<algorithm>
 using namespace std;
 
-class Solution {
+class Solution_04 {
 public:
 void findlongestSubstring(string s, int left, int right,int &start, int &len)
 {

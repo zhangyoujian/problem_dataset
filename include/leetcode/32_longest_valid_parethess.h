@@ -2,7 +2,7 @@
 #include <string.h>
 using namespace std;
 
-class Solution {
+class Solution_32 {
 public:
     int longestValidParentheses(string s) {
         int maxMatch = 0;

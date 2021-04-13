@@ -1,12 +1,4 @@
-#include <iostream>
-#include "gtest/gtest.h"
-#include <algorithm>
-#include <vector>
-using namespace std;
-#include "04_media_of_two_sorted_arrays.h"
-#include "07_reverse_integer.h"
-#include "08_string_to_integer.h"
-
+#include "leetcode_pub.h"
 
 class test_leetcode : public testing::Test {
 protected:
@@ -22,13 +14,24 @@ protected:
 private:
 };
 
+TEST_F(test_leetcode, 01_TwoSum)
+{
+    Solution_01 A;
+    vector<int> nums = {2,7,11,15};
+    int target = 9;
+    vector<int> ret = A.twoSum(nums, target);
+    EXPECT_EQ(2, ret.size());
+    EXPECT_EQ(0, ret[0]);
+    EXPECT_EQ(1, ret[1]);
+}
+
 TEST_F(test_leetcode, 04_media_of_two_sorted_arrays)
 {
     Solution_04 A;
-    vector<int> nums1 = {2};
-    vector<int> nums2 = {};
+    vector<int> nums1 = {1, 2};
+    vector<int> nums2 = {3, 4};
     double ret = A.findMedianSortedArrays(nums1, nums2);
-    printf("ret = %.4f\n", ret);
+    EXPECT_EQ(ret, 2.5000);
 }
 
 TEST_F(test_leetcode, 07_reverse_integer)

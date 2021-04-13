@@ -3,7 +3,7 @@
 #include<unordered_map.h>
 using namespace std;
 
-class Solution {
+class Solution_03 {
 public:
     int lengthOfLongestSubstring(string s) {
         unordered_map<char, int> recoder;
