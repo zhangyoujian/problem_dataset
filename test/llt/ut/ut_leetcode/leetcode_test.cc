@@ -68,3 +68,55 @@ TEST_F(test_leetcode, 08_string_to_integer)
     ret = A.myAtoi("-91283472332");
     EXPECT_EQ(ret, -2147483648);
 }
+
+TEST_F(test_leetcode, 10_regular_expression_matching)
+{
+    Solution_10 A;
+    EXPECT_EQ(A.isMatch("aa", "a"), false);
+    EXPECT_EQ(A.isMatch("aa", "a*"), true);
+    EXPECT_EQ(A.isMatch("ab", ".*"), true);
+    EXPECT_EQ(A.isMatch("aab", "c*a*b"), true);
+    EXPECT_EQ(A.isMatch("mississippi", "mis*is*p*."), false);
+    EXPECT_EQ(A.isMatch("bbbba", ".*a*a"), true);
+}
+
+
+TEST_F(test_leetcode, 11_Container_With_Most_Water)
+{
+    Solution_11 A;
+    vector<int> a = {1, 1};
+    EXPECT_EQ(A.maxArea(a), 1);
+
+    vector<int> b = {4,3,2,1,4};
+    EXPECT_EQ(A.maxArea(b), 16);
+
+    vector<int> c = {1, 2, 1};
+    EXPECT_EQ(A.maxArea(c), 2);
+
+    vector<int> e = {2,3,4,5,18,17,6};
+    EXPECT_EQ(A.maxArea(e), 17);
+}
+
+
+TEST_F(test_leetcode, 16_3Sum_Closest)
+{
+    Solution_16 A;
+    vector<int> nums = {0, 2, 1, -3};
+    int target = 1;
+    int ret = A.threeSumClosest(nums, target);
+    EXPECT_EQ(ret, 0);
+}
+
+TEST_F(test_leetcode, 30_Substring_with_Concatenation_of_All_Words)
+{
+    Solution_30 A;
+
+    string s = "wordgoodgoodgoodbestword";
+    vector<string> words = {"word","good","best","good"};
+
+    vector<int> ret = A.findSubstring(s, words);
+    EXPECT_EQ(ret.size(), 2);
+    EXPECT_EQ(ret[0], 0);
+    EXPECT_EQ(ret[1], 9);
+
+}
