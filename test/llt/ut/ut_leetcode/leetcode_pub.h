@@ -2,7 +2,6 @@
 #include "gtest/gtest.h"
 #include <algorithm>
 #include <vector>
-using namespace std;
 #include "1_TwoSum.h"
 #include "04_media_of_two_sorted_arrays.h"
 #include "07_reverse_integer.h"
@@ -12,3 +11,21 @@ using namespace std;
 #include "11_Container_With_Most_Water.h"
 #include "23_Merge_k_Sorted_Lists.h"
 #include "30_Substring_with_Concatenation_of_All_Words.h"
+#include "76_Minimum_Window_Substring.h"
+#include "410_Split_Array_Largest_Sum.h"
+using namespace std;
+
+
+class test_leetcode : public testing::Test {
+protected:
+
+    static void SetUpTestCase() {
+    }
+
+    static void TearDownTestCase() {
+    }
+    virtual void SetUp() {}
+    virtual void TearDown() {
+    }
+private:
+};

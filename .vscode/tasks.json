@@ -4,13 +4,13 @@
 		{
 			"type": "shell",
 			"label": "LeetCode",
-			"command": "C:\\Program Files (x86)\\MingW64\\mingw64\\bin\\g++.exe",
+			"command": "D:\\MingW\\mingw64\\bin\\g++.exe",
 			"args": [
 				"-g",
 				"-Wall",
 				"${file}",
 				"-o",
-				"${fileDirname}/output/bin/${fileBasenameNoExtension}.exe"
+				"${fileDirname}/../output/bin/${fileBasenameNoExtension}.exe"
 			],
 			"options": {
 				"cwd": "${workspaceFolder}"

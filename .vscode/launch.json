@@ -8,14 +8,14 @@
             "name": "LeetCode",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/output/bin/${fileBasenameNoExtension}.exe",
+            "program": "${fileDirname}/../output/bin/${fileBasenameNoExtension}.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
-            "miDebuggerPath": "C:\\Program Files (x86)\\MingW64\\mingw64\\bin\\gdb.exe",
+            "miDebuggerPath": "D:\\MingW\\mingw64\\bin\\gdb.exe",
             "setupCommands": [
                 {
                     "description": "为 gdb 启用整齐打印",

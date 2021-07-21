@@ -4,7 +4,7 @@ CUR_DIR=$(cd `dirname $0`;pwd)
 BUILD_DIR=$CUR_DIR
 
 rm -rf $BUILD_DIR/tmp
-rm -rf ut_sort
+rm -rf ut_algo
 
 mkdir -p $BUILD_DIR/tmp
 

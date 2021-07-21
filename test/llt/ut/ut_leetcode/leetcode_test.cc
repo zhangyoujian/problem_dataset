@@ -1,21 +1,7 @@
 #include "leetcode_pub.h"
 
-class test_leetcode : public testing::Test {
-protected:
-
-    static void SetUpTestCase() {
-    }
-
-    static void TearDownTestCase() {
-    }
-    virtual void SetUp() {}
-    virtual void TearDown() {
-    }
-private:
-};
-
 TEST_F(test_leetcode, 01_TwoSum)
-{
+{  
     Solution_01 A;
     vector<int> nums = {2,7,11,15};
     int target = 9;
@@ -112,11 +98,29 @@ TEST_F(test_leetcode, 30_Substring_with_Concatenation_of_All_Words)
     Solution_30 A;
 
     string s = "wordgoodgoodgoodbestword";
-    vector<string> words = {"word","good","best","good"};
+    vector<string> words = {"word","good","best","word"};
 
     vector<int> ret = A.findSubstring(s, words);
-    EXPECT_EQ(ret.size(), 2);
-    EXPECT_EQ(ret[0], 0);
-    EXPECT_EQ(ret[1], 9);
+    EXPECT_EQ(ret.size(), 0);
+}
 
+TEST_F(test_leetcode, 76_Minimum_Window_Substring)
+{
+    Solution_76 A;
+    string ret = A.minWindow("ADOBECODEBANC", "ABC");
+    EXPECT_EQ(strcmp(ret.c_str(), "BANC"), 0);
+}
+
+TEST_F(test_leetcode, 410_Split_Array_Largest_Sum)
+{
+    Solution_410 A;
+    vector<int> nums = {7,2,5,10,8};
+    int m = 2;
+    int ret = A.splitArray(nums, m);
+    EXPECT_EQ(ret, 18);
+
+    nums = {1, 4, 4};
+    m = 3;
+    ret = A.splitArray(nums, m);
+    EXPECT_EQ(ret, 4);
 }

@@ -15,7 +15,7 @@ public:
             map[word] = map.count(word) == 0 ? 1 : (map[word] + 1);
         }
 
-        for (int i = 0; i < string_length - word_size * word_nums; ++i) {
+        for (int i = 0; i <= string_length - word_size * word_nums; ++i) {
             unordered_map<string, int> tmp = map;
             int start = 0;
             while (start < word_size * word_nums) {

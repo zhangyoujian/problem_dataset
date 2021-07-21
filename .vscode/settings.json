@@ -64,6 +64,8 @@
         "map": "cpp",
         "set": "cpp",
         "iomanip": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "stdio.h": "c",
+        "search.h": "c"
     }
 }

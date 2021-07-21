@@ -7,13 +7,13 @@
                 "${workspaceFolder}/include/**",
                 "${workspaceFolder}/src/**",
                 "${workspaceFolder}/test/gtest/include/*",
-                "C:/Program Files (x86)/MingW64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits",
-                "C:/Program Files (x86)/MingW64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++",
-                "C:/Program Files (x86)/MingW64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32",
-                "C:/Program Files (x86)/MingW64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward",
-                "C:/Program Files (x86)/MingW64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include",
-                "C:/Program Files (x86)/MingW64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed",
-                "C:/Program Files (x86)/MingW64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/../../../../x86_64-w64-mingw32/include"
+                "D:/MingW/mingw64/bin../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits",
+                "D:/MingW/mingw64/bin../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++",
+                "D:/MingW/mingw64/bin../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32",
+                "D:/MingW/mingw64/bin../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward",
+                "D:/MingW/mingw64/bin../lib/gcc/x86_64-w64-mingw32/8.1.0/include",
+                "D:/MingW/mingw64/bin../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed",
+                "D:/MingW/mingw64/bin../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"
             ],
             "defines": [
                 "_DEBUG",
@@ -29,13 +29,13 @@
                     "${workspaceFolder}/**",
                     "${workspaceFolder}/include/**",
                     "${workspaceFolder}/src/**",
-                    "C:/Program Files (x86)/MingW64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/bits",
-                    "C:/Program Files (x86)/MingW64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++",
-                    "C:/Program Files (x86)/MingW64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32",
-                    "C:/Program Files (x86)/MingW64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward",
-                    "C:/Program Files (x86)/MingW64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include",
-                    "C:/Program Files (x86)/MingW64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed",
-                    "C:/Program Files (x86)/MingW64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/../../../../x86_64-w64-mingw32/include"
+                    "D:/MingW/mingw64/bin../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits",
+                    "D:/MingW/mingw64/bin../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++",
+                    "D:/MingW/mingw64/bin../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32",
+                    "D:/MingW/mingw64/bin../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward",
+                    "D:/MingW/mingw64/bin../lib/gcc/x86_64-w64-mingw32/8.1.0/include",
+                    "D:/MingW/mingw64/bin../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed",
+                    "D:/MingW/mingw64/bin../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"
                 ]
             }
         }
