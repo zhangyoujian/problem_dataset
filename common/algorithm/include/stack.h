@@ -9,9 +9,7 @@ Description: heard file
 #ifndef STACK_H
 #define STACK_H
 #include "pub.h"
-
-typedef int bool;
-
+#include "stdbool.h"
 #ifdef __cplusplus
 extern "C" {
 #endif

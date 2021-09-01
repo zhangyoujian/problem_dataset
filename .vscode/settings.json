@@ -66,6 +66,9 @@
         "iomanip": "cpp",
         "variant": "cpp",
         "stdio.h": "c",
-        "search.h": "c"
+        "search.h": "c",
+        "stdlib.h": "c",
+        "93_copyipaddr": "cpp",
+        "stack.h": "c"
     }
 }

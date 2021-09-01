@@ -19,8 +19,15 @@ extern "C" {
 
 #define STATUS_OK       0
 #define STATUS_ERROR    -1
-#define ASSERT(p)       assert(p)
 
+#ifndef DEBUG
+    #define ASSERT(p)       (void)(p)
+#else
+    #define ASSERT(p)       assert(p)
+#endif
+
+typedef unsigned int uint32;
+typedef int int32;
 
 #ifdef __cplusplus
 }

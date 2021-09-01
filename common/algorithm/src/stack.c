@@ -5,7 +5,7 @@
 extern "C" {
 #endif
 
-StackT *StackCreate(unsigned int stackSize, unsigned int eleSize)
+StackT *StackCreate(uint32 stackSize, uint32 eleSize)
 {
     if (stackSize < 1 || eleSize == 0) {
         return NULL;

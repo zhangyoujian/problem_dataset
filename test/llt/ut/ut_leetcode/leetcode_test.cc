@@ -124,3 +124,16 @@ TEST_F(test_leetcode, 410_Split_Array_Largest_Sum)
     ret = A.splitArray(nums, m);
     EXPECT_EQ(ret, 4);
 }
+
+TEST_F(test_leetcode, 93_CopyIpAddr)
+{
+    Solution_93 A;
+    string args = "25525511135";
+    vector<string> ret = A.restoreIpAddresses(args);
+    EXPECT_EQ(2, ret.size());
+    printf("[\n");
+    for (int i = 0; i < ret.size(); ++i) {
+        printf("%s", ret[i].c_str()); 
+    }
+    printf("]\n");
+}
