@@ -69,6 +69,11 @@
         "search.h": "c",
         "stdlib.h": "c",
         "93_copyipaddr": "cpp",
-        "stack.h": "c"
+        "stack.h": "c",
+        "bstree.h": "c",
+        "type.h": "c",
+        "chrono": "cpp",
+        "ratio": "cpp",
+        "pub.h": "c"
     }
 }

@@ -14,14 +14,16 @@ Description: heard file
 extern "C" {
 #endif
 
-void SelectSort(int arr[], uint N);
-void BubbleSort(int arr[], uint N);
-void InsertSort(int arr[], uint N);
-void ShellSort(int arr[], uint N);
-void MergeSort(int arr[], uint N);
-void HeapSort(int arr[], uint N);
-void QuickSort(int arr[], uint N);
+void SelectSort(int arr[], uint N); // 选择排序
+void BubbleSort(int arr[], uint N); // 冒泡排序
+void InsertSort(int arr[], uint N); // 插入排序
+void ShellSort(int arr[], uint N);  // 希尔排序
+void MergeSort(int arr[], uint N);  // 归并排序
+void HeapSort(int arr[], uint N);   // 堆排序
+void QuickSort(int arr[], uint N);  // 快速排序
 
+void CountSort(int arr[], uint N);  // 计数排序, 待实现...
+void BaseSort(int arr[], uint N);  //  基数排序, 待实现...
 
 #ifdef __cplusplus
 }
