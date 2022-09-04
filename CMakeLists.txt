@@ -14,5 +14,7 @@ set (PUB_INC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/pub/)
 
 add_subdirectory(${COMMON_DIR})
 
+add_subdirectory(${COMMON_DIR})
+
 
 

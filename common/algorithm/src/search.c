@@ -15,11 +15,10 @@ int BinarySearch(int arr[], int N, int target)
         } else if (arr[mid] > target) {
             right = mid - 1;
         } else {
-            ret = mid;
-            break;
+            return mid;
         }
     }
-    return ret;
+    return -1;
 }
 
 int BinarySearchLeftBound(int arr[], int N, int target)
@@ -27,7 +26,7 @@ int BinarySearchLeftBound(int arr[], int N, int target)
     int left = 0;
     int right = N;
     while (left < right) {
-        int mid = (left + right) >>1;
+        int mid = (left + right) >> 1;
         if (arr[mid] == target) {
             right = mid;
         } else if (arr[mid] > target) {
