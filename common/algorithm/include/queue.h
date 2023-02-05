@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "pub.h"
+#include "type.h"
 
 #ifndef PRIORITY_QUEUE_H
 #define PRIORITY_QUEUE_H

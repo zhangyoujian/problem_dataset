@@ -1,4 +1,7 @@
-#include "problem.h"
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
 #include<stack>
 /*
 问题概述: 计算表达式
@@ -16,9 +19,10 @@ namespace EnumPriority {
 };
 
 using namespace EnumPriority;
-class Problem_4 : public Problem {
+class Problem_4 {
+
 public:
-    bool isDigit(char ch)
+bool isDigit(char ch)
 {
 	return (ch >= '0') && (ch <= '9');
 }

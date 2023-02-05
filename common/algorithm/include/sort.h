@@ -8,6 +8,7 @@ Description: heard file
 */
 #ifndef SORT_H
 #define SORT_H
+#include "pub.h"
 #include "type.h"
 
 #ifdef __cplusplus

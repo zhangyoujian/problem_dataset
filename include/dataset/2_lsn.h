@@ -1,11 +1,14 @@
-#include "problem.h"
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
 /*
 问题概述: 
 问题详细描述:
 解法: 动态规划
 状态: pass
 */
-class Problem_2 : public Problem {
+class Problem_2 {
 public:
     int LSN(int arr[], int N) {
         int dp[256] = {0};
@@ -19,6 +22,7 @@ public:
                 dp[pos] = arr[i];
             }
         }
+        return len;
     }
 private:
     int binary_search(int dp[], int len, int a) {

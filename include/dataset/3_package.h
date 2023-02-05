@@ -1,4 +1,7 @@
-#include "problem.h"
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
 /*
 问题概述: 
 问题详细描述: 
@@ -6,7 +9,7 @@
 状态: pass
 */
 
-class Problem_3 : public Problem {
+class Problem_3 {
 public:
     int FindMaxValueInner(int start, int currentValue, int remainSize, char *isVisited)
     {

@@ -8,6 +8,7 @@ Description: heard file
 */
 #ifndef BSTREE_H
 #define BSTREE_H
+#include "pub.h"
 #include "type.h"
 
 #ifdef __cplusplus

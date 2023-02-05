@@ -10,6 +10,6 @@ using namespace std;
 */
 class Problem {
 public:
-    Problem() {};
-   virtual ~Problem() {};
+    Problem();
+   virtual ~Problem();
 };

@@ -2,6 +2,8 @@
 #define SEARCH_H
 #include <stdio.h>
 #include <stdlib.h>
+#include "pub.h"
+#include "type.h"
 
 #ifdef __cplusplus
 extern "C" {

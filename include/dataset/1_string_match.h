@@ -1,11 +1,14 @@
-#include "problem.h"
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
 /*
 问题概述: 字符串正则表达式匹配
 问题详细描述: W是个模式，校验P是否匹配
 解法:
 状态: pass
 */
-class Problem_1 : public Problem {
+class Problem_1 {
 public:
     bool isMatch_simple(const char *w, const char *p)
     {
