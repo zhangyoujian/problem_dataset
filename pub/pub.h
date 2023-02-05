@@ -26,9 +26,6 @@ extern "C" {
     #define ASSERT(p)       assert(p)
 #endif
 
-typedef unsigned int uint32;
-typedef int int32;
-
 #ifdef __cplusplus
 }
 #endif

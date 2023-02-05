@@ -1,6 +1,11 @@
-#include <iostream>
-using namespace std;
-class Problem_1 {
+#include "problem.h"
+/*
+问题概述: 字符串正则表达式匹配
+问题详细描述: W是个模式，校验P是否匹配
+解法:
+状态: pass
+*/
+class Problem_1 : public Problem {
 public:
     bool isMatch_simple(const char *w, const char *p)
     {

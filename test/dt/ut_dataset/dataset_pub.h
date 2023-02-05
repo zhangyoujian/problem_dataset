@@ -4,7 +4,7 @@
 #include <vector>
 using namespace std;
 
-class test_book : public testing::Test {
+class test_dataset : public testing::Test {
 protected:
     static void SetUpTestCase() {
     }
@@ -16,8 +16,3 @@ protected:
     }
 private:
 };
-
-TEST_F(test_book, 01_problem)
-{
-    
-}

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(ut_algo)
+project(ut_algorithm)
 
 # 设置编译选项
 set(CMAKE_CXX_FLAGS "-O0 ${CMAKE_CXX_FLAGS}")
@@ -31,9 +31,9 @@ aux_source_directory(. SRC_LIST)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR})
 
 # 编译生成可执行文件
-add_executable(ut_algo ${SRC_LIST})
+add_executable(ut_algorithm ${SRC_LIST})
 
 # 添加链接库
-target_link_libraries(ut_algo algorithm pthread)
+target_link_libraries(ut_algorithm algorithm pthread)
 
 

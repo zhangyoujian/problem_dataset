@@ -21,6 +21,8 @@ set (OUTPUT_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../../../../output/)
 set (OUTPUT_LIB_PATH ${OUTPUT_DIR}/lib/)
 
 set (INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../../../../include/)
+
+
 set (LEETCODE_INC_DIR ${INCLUDE_DIR}/leetcode/)
 include_directories(${LEETCODE_INC_DIR})
 
@@ -34,6 +36,6 @@ set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR})
 add_executable(ut_leetcode ${SRC_LIST})
 
 # 添加链接库
-target_link_libraries(ut_leetcode pthread)
+target_link_libraries(ut_leetcode leetcode pthread)
 
 

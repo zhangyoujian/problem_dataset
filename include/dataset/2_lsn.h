@@ -1,6 +1,11 @@
-#include <iostream>
-using namespace std;
-class Problem_2 {
+#include "problem.h"
+/*
+问题概述: 
+问题详细描述:
+解法: 动态规划
+状态: pass
+*/
+class Problem_2 : public Problem {
 public:
     int LSN(int arr[], int N) {
         int dp[256] = {0};

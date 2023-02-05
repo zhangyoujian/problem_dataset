@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(ut_testbook)
+project(ut_dataset)
 
 # 设置编译选项
 set(CMAKE_CXX_FLAGS "-O0 ${CMAKE_CXX_FLAGS}")
@@ -21,8 +21,10 @@ set (OUTPUT_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../../../../output/)
 set (OUTPUT_LIB_PATH ${OUTPUT_DIR}/lib/)
 
 set (INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../../../../include/)
-set (TESTBOOK_INC_DIR ${INCLUDE_DIR}/test_book/)
-include_directories(${TESTBOOK_INC_DIR})
+
+
+set (DATASET_INC_DIR ${INCLUDE_DIR}/dataset/)
+include_directories(${DATASET_INC_DIR})
 
 link_directories(${OUTPUT_LIB_PATH})
 
@@ -31,9 +33,9 @@ aux_source_directory(. SRC_LIST)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR})
 
 # 编译生成可执行文件
-add_executable(ut_testbook ${SRC_LIST})
+add_executable(ut_dataset ${SRC_LIST})
 
 # 添加链接库
-target_link_libraries(ut_testbook pthread)
+target_link_libraries(ut_dataset dataset pthread)
 
 
