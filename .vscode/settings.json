@@ -75,6 +75,7 @@
         "chrono": "cpp",
         "ratio": "cpp",
         "pub.h": "c",
-        "stdbool.h": "c"
+        "stdbool.h": "c",
+        "numeric": "cpp"
     }
 }

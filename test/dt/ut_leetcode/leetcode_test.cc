@@ -138,6 +138,25 @@ TEST_F(test_leetcode, 93_CopyIpAddr)
     printf("]\n");
 }
 
+TEST_F(test_leetcode, 92_Reverse Linked List_II)
+{
+    Solution_92 A;
+    ListNode* node = new ListNode[10];
+
+    for (int i = 0; i < 10; ++i) {
+        node[i].val = i;
+        node[i].next = node + i + 1;
+    }
+    node[9].next = NULL;
+    ListNode* ret = A.reverseList(node);
+
+    for (int i = 0; i < 10; ++i) {
+        cout << ret->val;
+        ret = ret ->next;
+    }
+    delete []node;
+}
+
 TEST_F(test_leetcode, 146_LRU_Cache)
 {
     LRUCache *lRUCache = new LRUCache(2);
